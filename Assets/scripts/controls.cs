@@ -21,9 +21,9 @@ public class controls : MonoBehaviour {
 		Noter.x=0;
 
 		if (Input.GetKey("d")) {
-			rb.AddForce(HlidarHradi*Time.fixedDeltaTime,0,0);}
+			rb.AddForce(HlidarHradi*Time.fixedDeltaTime,0,0,ForceMode.VelocityChange);}
 		else if (Input.GetKey("a")) {
-			rb.AddForce(-HlidarHradi*Time.fixedDeltaTime,0,0);}
+			rb.AddForce(-HlidarHradi*Time.fixedDeltaTime,0,0,ForceMode.VelocityChange);}
 		/*else {
 			rb.velocity=Noter;
 		}*/
